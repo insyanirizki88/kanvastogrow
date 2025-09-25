@@ -1,2 +1,2 @@
-# kanvastogrow.github.io
-Environmental data science for sustainability.
+# kanvastogrow
+Environmental data solutions for sustainability.
