@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KanvasToGrow - Environmental Data Solutions</title>
+    <title>Kanvas To Grow - Environmental Data Science</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -13,23 +13,141 @@
             color: white;
             padding: 100px 0;
         }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+        .approach-card {
+            border-left: 4px solid #00b894;
+            transition: transform 0.3s ease;
+        }
+        .approach-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-link {
+            color: #00b894;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-link:hover {
+            color: #00a085;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">KanvasToGrow</a>
+            <a class="navbar-brand fw-bold" href="#">Kanvas To Grow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#approach">Approach</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section text-center">
         <div class="container">
-            <h1>Data Solutions for Environmental Sustainability</h1>
-            <p class="lead">Turning environmental data into actionable strategies</p>
+            <h1 class="display-4 fw-bold mb-3">Kanvas To Grow</h1>
+            <h2 class="h3 mb-4">Environmental Data Science for Sustainability</h2>
+            <p class="lead mb-4">by Insyani Rizki</p>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="lead mb-4">
+                        Hello! I am Insyani Rizki. Welcome to my GitHub Page. This is my portfolio of data-driven projects 
+                        aimed at solving key environmental challenges. Here, I leverage data analysis, machine learning, 
+                        and visualization to understand complex issues and develop actionable solutions for environmental sustainability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">My Approach</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 approach-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Define the Challenge</h5>
+                            <p class="card-text">
+                                Isolate a specific environmental problem, from deforestation to water scarcity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 approach-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Analyze the Data</h5>
+                            <p class="card-text">
+                                Use tools like Python and SQL to clean, explore, visualize and model relevant datasets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 approach-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Develop the Solution</h5>
+                            <p class="card-text">
+                                Build predictive models, interactive dashboards, or analytical reports that offer clear, actionable insights.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Information</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="d-grid gap-3">
+                        <a href="mailto:insyanirizki@gmail.com" class="btn btn-outline-success btn-lg contact-link">
+                            📧 Email: insyanirizki@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/insyanirizki88" target="_blank" class="btn btn-outline-primary btn-lg contact-link">
+                            💼 LinkedIn: www.linkedin.com/in/insyanirizki88
+                        </a>
+                        <a href="https://github.com/insyanirizki88" target="_blank" class="btn btn-outline-dark btn-lg contact-link">
+                            🔗 GitHub: https://github.com/insyanirizki88
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Kanvas To Grow by Insyani Rizki. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
