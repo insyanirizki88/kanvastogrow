@@ -31,10 +31,28 @@
             color: #00b894;
             text-decoration: none;
             transition: color 0.3s ease;
+            border: 2px solid #00b894;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 5px;
+            display: inline-block;
         }
         .contact-link:hover {
-            color: #00a085;
-            text-decoration: underline;
+            color: white;
+            background-color: #00b894;
+            text-decoration: none;
+        }
+        .contact-horizontal {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        @media (max-width: 768px) {
+            .contact-horizontal {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -124,20 +142,16 @@
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Contact Information</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="d-grid gap-3">
-                        <a href="mailto:insyanirizki@gmail.com" class="btn btn-outline-success btn-lg contact-link">
-                            📧 Email: insyanirizki@gmail.com
-                        </a>
-                        <a href="https://www.linkedin.com/in/insyanirizki88" target="_blank" class="btn btn-outline-primary btn-lg contact-link">
-                            💼 LinkedIn: www.linkedin.com/in/insyanirizki88
-                        </a>
-                        <a href="https://github.com/insyanirizki88" target="_blank" class="btn btn-outline-dark btn-lg contact-link">
-                            🔗 GitHub: https://github.com/insyanirizki88
-                        </a>
-                    </div>
-                </div>
+            <div class="contact-horizontal">
+                <a href="mailto:insyanirizki@gmail.com" class="contact-link">
+                    📧 Email
+                </a>
+                <a href="https://www.linkedin.com/in/insyanirizki88" target="_blank" class="contact-link">
+                    💼 LinkedIn
+                </a>
+                <a href="https://github.com/insyanirizki88" target="_blank" class="contact-link">
+                    🔗 GitHub
+                </a>
             </div>
         </div>
     </section>
@@ -145,7 +159,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2024 Kanvas To Grow by Insyani Rizki. All rights reserved.</p>
+            <p class="mb-0">&copy; 2025 Kanvas To Grow by Insyani Rizki. All rights reserved.</p>
         </div>
     </footer>
 
